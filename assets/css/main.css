@@ -2386,13 +2386,31 @@ input[type="radio"] + label:before {
 
 img#avi {
   max-width: 100%; /* Ensure the image does not exceed the container width */
-  height: 20rem; /* Maintain aspect ratio */
+  height: 300px; /* Maintain aspect ratio */
   display: block; /* Remove any inline elements issues */
   margin: 0 auto; /* Center the image horizontally */
   object-fit: cover; /* Ensure the image covers the container fully */
   border-radius: 50%; /* Make the image circular (if needed) */
 }
 
+/*
+ Show the avi image on small screens (e.g., below 768px) 
+@media (max-width: 200px) {
+  img#avi {
+    display: block;
+    width: 300px; /* Adjust as needed 
+    height: auto; /* Maintain aspect ratio 
+    margin: 0 auto; /* Center the image 
+    object-fit: cover;
+    border-radius: 50%; /* Make the image circular if desired 
+  }
+
+  /* Hide the goldenGatePic image on small screens 
+  .goldenGatePic {
+    display: none;
+  }
+}
+*/
 /* List */
 
 ol {
